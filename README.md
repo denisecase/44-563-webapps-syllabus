@@ -23,3 +23,4 @@
 * Clone your repository down to your local machine.
 * From Windows File Explorer, open index.html in Chrome to view.
 * Using Visual Studio Code, open the folder to edit.
+* Open GitHub respository, under Settings / GitHub Pages, set Source to master branch and click Save.
