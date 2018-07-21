@@ -7,7 +7,7 @@
 ## Links
 
 * Repository: <https://github.com/profcase/44-563-webapps-syllabus>
-* Webpage: <https://profcase.github.io/44-517563-webapps-syllabus>
+* Webpage: <https://profcase.github.io/44-563-webapps-syllabus>
 
 ## Recommended
 
