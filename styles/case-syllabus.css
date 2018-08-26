@@ -39,9 +39,9 @@ h3 {
   color: rgb(121, 121, 121);
 }
 
-main>img {
-  max-width: 20px;
-  max-height: 20px;
+.img-thumbnail {
+  border-width: 0px;
+  margin-right: 5px;
 }
 
 code {
