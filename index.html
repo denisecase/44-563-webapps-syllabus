@@ -6,24 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Syllabus for NWMSU 44-563 Developing Web Apps and Services Course">
   <meta name="author" content="Denise Case">
+  <meta name="theme-color" content="#006747" />
   <link rel="icon" href="favicon.gif">
+  <link rel="manifest" href="/manifest.json">
 
   <title>44-563 Web Apps</title>
 
-  <!-- Bootstrap Material Design CSS goes first https://fezvrasta.github.io/bootstrap-material-design/ -->
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <!-- Bootstrap Material Design CSS goes first  -->
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="styles/case-syllabus.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Use rel="noopener" to prevent the linked page from being able to access window.opener property - ensures it will run in a separate proces-->
 
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark bg-nw-green">
-      <a class="navbar-brand bg-nw-green" href="#">44-563</a>
+      <a rel="noopener" class="navbar-brand bg-nw-green" href="#">44-563</a>
       <button class="navbar-toggler bg-nw-green" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,12 +36,12 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Syllabus
+            <a rel="noopener" class="nav-link" href="#">Syllabus
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://nwmissouri.instructure.com/courses/20904" target="_blank">Canvas</a>
+            <a rel="noopener" class="nav-link" href="https://nwmissouri.instructure.com/courses/20904" target="_blank">Canvas</a>
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
@@ -76,9 +81,9 @@
     <br /> Assistant Professor
     <br /> 660.562.1136
     <br />
-    <a target="_top" href="mailto:dcase@nwmissouri.edu?Subject=44-563">dcase@nwmissouri.edu</a>
+    <a rel="noopener" target="_top" href="mailto:dcase@nwmissouri.edu?Subject=44-563">dcase@nwmissouri.edu</a>
     <br />
-    <a target="_blank" href="https://www.nwmissouri.edu/services/facility/pdf/floorplans/Colden%20Hall%202nd%20Floor.pdf">
+    <a rel="noopener" target="_blank" href="https://www.nwmissouri.edu/services/facility/pdf/floorplans/Colden%20Hall%202nd%20Floor.pdf">
       Colden Hall 2280</a>
     <br />
 
@@ -247,34 +252,40 @@
         (e.g., pop quizzes)</li>
       <li> Their campus-assigned laptop, in working order, with all required software</li>
       <li> Free
-        <a target="_blank" href="https://git-scm.com/">Git</a> distributed version control system</li>
+        <a rel="noopener" target="_blank" href="https://git-scm.com/">Git</a> distributed version control system</li>
       <li> Free
-        <a target="_blank" href="https://tortoisegit.org/">TortoiseGit</a> for integrating Git with Windows File
+        <a rel="noopener" target="_blank" href="https://tortoisegit.org/">TortoiseGit</a> for integrating Git with
+        Windows File
         Explorer</li>
       <li> Free
-        <a target="_blank" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a> for creating
+        <a rel="noopener" target="_blank" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a>
+        for creating
         SSH public/private key pairs</li>
       <li> Free
-        <a target="_blank" href="https://bitbucket.org">BitBucket</a> and
-        <a target="_blank" href="https://github.com/">GitHub</a> educational accounts</li>
+        <a rel="noopener" target="_blank" href="https://bitbucket.org">BitBucket</a> and
+        <a rel="noopener" target="_blank" href="https://github.com/">GitHub</a> educational accounts</li>
       <li> Free
-        <a target="_blank" href="https://education.github.com/pack">GitHub Education Pack</a> (as needed)</li>
+        <a rel="noopener" target="_blank" href="https://education.github.com/pack">GitHub Education Pack</a> (as
+        needed)</li>
       <li> Free
-        <a target="_blank" href="https://chocolatey.org/">Chocolatey</a> package manager for Windows</a>
+        <a rel="noopener" target="_blank" href="https://chocolatey.org/">Chocolatey</a> package manager for Windows</a>
       </li>
       <li> Free
-        <a target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a> text editor</li>
+        <a rel="noopener" target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a> text editor</li>
       <li> Free
-        <a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a> integrated development
+        <a rel="noopener" target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a> integrated
+        development
         environment </li>
       <li> Free
-        <a target="_blank" href="http://codingJS.com/">CodingJS</a> for JavaScript practice</li>
+        <a rel="noopener" target="_blank" href="http://codingJS.com/">CodingJS</a> for JavaScript practice</li>
       <li> Free access to
-        <a target="_blank" href="https://www.typing.com/">Mozilla Developer Network (MDN) and other resources</a>
+        <a rel="noopener" target="_blank" href="https://www.typing.com/">Mozilla Developer Network (MDN) and other
+          resources</a>
       </li>
       <li> Various free, open-source tools and libraries as directed by the instructor. </li>
       <li> Free account at
-        <a target="_blank" href="https://www.typing.com/">Typing.com</a>. Typing is a foundational skill for software
+        <a rel="noopener" target="_blank" href="https://www.typing.com/">Typing.com</a>. Typing is a foundational skill
+        for software
         development. </li>
     </ul>
 
@@ -338,13 +349,13 @@
     <h3>Schedule Links</h3>
     <ul>
       <li>
-        <a href="https://www.nwmissouri.edu/academics/calendar.htm">Academic Calendar</a>
+        <a rel="noopener" href="https://www.nwmissouri.edu/academics/calendar.htm">Academic Calendar</a>
       </li>
       <li>
-        <a href="https://www.nwmissouri.edu/registrar/finals.htm">Final Exams Schedule</a>
+        <a rel="noopener" href="https://www.nwmissouri.edu/registrar/finals.htm">Final Exams Schedule</a>
       </li>
       <li>
-        <a href="http://calendar.nwmissouri.edu/">University Events</a>
+        <a rel="noopener" href="http://calendar.nwmissouri.edu/">University Events</a>
       </li>
     </ul>
 
@@ -505,7 +516,7 @@
     points for the
     activity. Notify your instructor when unable to attend class. Please refer to the university policy on attendance
     at
-    <a target="_blank" href="https://www.nwmissouri.edu/policies/academics/Attendance.pdf">https://www.nwmissouri.edu/policies/academics/Attendance.pdf</a>
+    <a rel="noopener" target="_blank" href="https://www.nwmissouri.edu/policies/academics/Attendance.pdf">https://www.nwmissouri.edu/policies/academics/Attendance.pdf</a>
 
     <h2>Excused Absences </h2>
     Excused absences include attendance at a university sponsored event (documented with an excuse signed by the
@@ -524,7 +535,7 @@
 
     <h2>Course Access</h2>
     Course content is provided via Canvas and Northwest Online. Access to Northwest Online is at
-    <a href="https://nwmissouri.instructure.com/">https://nwmissouri.instructure.com/</a>.
+    <a rel="noopener" href="https://nwmissouri.instructure.com/">https://nwmissouri.instructure.com/</a>.
 
     <h2>University Communications </h2>
     Students are expected to use their Northwest student email account for any electronic correspondence within the
@@ -534,10 +545,10 @@
     The students, faculty, and staff at Northwest endeavor to sustain an environment that values honesty in academic
     work, that acknowledges the authorized aid provided by and intellectual contributions of others, and that enables
     equitable student evaluation. Please refer to Northwest Missouri State University’s Academic Integrity Policy at
-    <a target="_blank" href="http://www.nwmissouri.edu/policies/academics/Academic-Integrity.pdf">http://www.nwmissouri.edu/policies/academics/Academic-Integrity.pdf</a>.
+    <a rel="noopener" target="_blank" href="http://www.nwmissouri.edu/policies/academics/Academic-Integrity.pdf">http://www.nwmissouri.edu/policies/academics/Academic-Integrity.pdf</a>.
     In addition, students are expected to understand and abide by the Computer Science and Information Systems Academic
     Integrity Policy at
-    <a target="_blank" href="http://www.nwmissouri.edu/csis/pdf/AcademicIntegrityCSI.doc">http://www.nwmissouri.edu/csis/pdf/AcademicIntegrityCSI.doc</a>.
+    <a rel="noopener" target="_blank" href="http://www.nwmissouri.edu/csis/pdf/AcademicIntegrityCSI.doc">http://www.nwmissouri.edu/csis/pdf/AcademicIntegrityCSI.doc</a>.
     This document explains types of behavior considered to constitute academic dishonesty. You are responsible for
     reading this document and abiding by the guidelines described therein.
 
@@ -546,23 +557,24 @@
     with Disabilities Act of 1990 [ADA] and the ADA Amendments Act of 2008 [ADAAA]. If a student has a disability that
     qualifies under the ADA/ADAAA and requires accommodations, they should contact the Office for Equity and
     Accessibility for information on appropriate policies and procedures at
-    <a href="tel:+16605621639">660.562.1639</a>, or
-    <a target="_top" href="mailto:pjp@nwmissouri.edu?Subject=Accomodations">pjp@nwmissouri.edu</a> /
-    <a target="_top" href="mailto:ADA@nwmissouri.edu?Subject=Accomodations">ADA@nwmissouri.edu</a>. For the university
+    <a rel="noopener" href="tel:+16605621639">660.562.1639</a>, or
+    <a rel="noopener" target="_top" href="mailto:pjp@nwmissouri.edu?Subject=Accomodations">pjp@nwmissouri.edu</a> /
+    <a rel="noopener" target="_top" href="mailto:ADA@nwmissouri.edu?Subject=Accomodations">ADA@nwmissouri.edu</a>. For
+    the university
     policy on disability accommodation refer to
-    <a target="_blank" href="http://www.nwmissouri.edu/policies/student/Disability-Accommodation.pdf">http://www.nwmissouri.edu/policies/student/Disability-Accommodation.pdf</a>.
+    <a rel="noopener" target="_blank" href="http://www.nwmissouri.edu/policies/student/Disability-Accommodation.pdf">http://www.nwmissouri.edu/policies/student/Disability-Accommodation.pdf</a>.
 
     <h2>Non-Discrimination and Anti-Harrassment Policy </h2>
     Northwest Missouri State University is committed to maintaining an environment for all faculty, staff, students,
     and third parties that is free of illegal discrimination and harassment. Please refer to the Non-Discrimination and
     Anti-Harassment Policy at
-    <a target="_blank" href="http://www.nwmissouri.edu/diversity/titlevi.htm">http://www.nwmissouri.edu/diversity/titlevi.htm</a>.
+    <a rel="noopener" target="_blank" href="http://www.nwmissouri.edu/diversity/titlevi.htm">http://www.nwmissouri.edu/diversity/titlevi.htm</a>.
 
     <h2> Family Educational Rights and Privacy Act (FERPA) </h2>
     Family Educational Rights and Privacy Act of 1974, as amended (commonly known as the Buckley Amendment), is a
     federal law which provides that colleges and universities will maintain the confidentiality of student education
     records. Please refer to the Family Educational Rights and Privacy Act (FERPA) Policy at
-    <a target="_blank" href="http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf">http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf</a>
+    <a rel="noopener" target="_blank" href="http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf">http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf</a>
 
     <h2>Course Evaluation</h2>
     At the end of this course, you will be encouraged to complete a course evaluation.
@@ -575,39 +587,40 @@
 
   </main>
 
-
-  <footer class="footer ">
+  <footer class="footer">
     <div class="container ">
-      <span class="text-muted ">
-        <a href="https://www.linkedin.com/in/denisecase/">Denise Case </a>&nbsp; &#9670; &nbsp;
-        <a href="https://profcase.github.io/44-563-webapps-syllabus" target="_blank">Webpage</a> &nbsp; &#9670; &nbsp;
-        <a href="https://github.com/profcase/44-563-webapps-syllabus" target="_blank">Source</a>
+      <span class="text-muted">
+        <a rel="noopener" href="https://www.linkedin.com/in/denisecase/">Denise Case </a>&nbsp; &#9670; &nbsp;
+        <a rel="noopener" href="https://profcase.github.io/44-563-webapps-syllabus" target="_blank">Webpage</a> &nbsp;
+        &#9670; &nbsp;
+        <a rel="noopener" href="https://github.com/profcase/44-563-webapps-syllabus" target="_blank">Source</a>
       </span>
     </div>
   </footer>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65828104-2"></script>
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-65828104-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-65828104-2');
   </script>
 
-  <!-- Bootstrap Material design https://fezvrasta.github.io/bootstrap-material-design/
-    ================================================== -->
+  <!-- Bootstrap Material design  -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-    crossorigin="anonymous"></script>
+  <!-- Use defer to wait until HTML finishes loading -->
+  <!-- JQuery -->
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
 
-  <script src="vendor/mark.min.js"></script>
-  <script src="scripts/main.js"></script>
+  <script defer src="vendor/mark.min.js"></script>
+  <script defer src="scripts/main.js"></script>
 </body>
 
 </html>
