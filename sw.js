@@ -7,57 +7,70 @@ var urlsToCache = [
   '/scripts/main.js'
 ];
 
-self.addEventListener('install', function (ev) {
+self.addEventListener('install', event => {
   console.log("Service worker install starting");
   // Perform install steps - open cache, cache files, confirm
-  ev.waitUntil(
+  event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(function (cache) {
-        console.log('Opened cache');
+      .then(cache => {
+        console.log('Opened cache ', CACHE_NAME);
         return cache.addAll(urlsToCache);
+      })
+      .catch(err => {
+        console.log('Error opening cache ', CACHE_NAME);
+        return;
       })
   );
   console.log("Service worker installed");
 });
 
-self.addEventListener('activate', function (ev) {
+self.addEventListener('activate', event => {
   console.log("Service worker activated");
 });
 
-self.addEventListener('beforeinstallprompt', (ev) => {
+self.addEventListener('beforeinstallprompt', event => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
-  ev.preventDefault();
+  event.preventDefault();
   // Stash the event so it can be triggered later.
-  deferredPrompt = ev;
+  deferredPrompt = event;
 });
 
-self.addEventListener('fetch', function (ev) {
+self.addEventListener('fetch', event => {
   console.log("Service worker got a fetch request");
-  ev.respondWith(
-    caches.match(ev.request)
-      .then(function (res) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
         // Cache hit - return response
-        if (res) {
-          return res;
+        if (response) {
+          console.log('Found ', event.request.url, ' in cache');
+          return response;
         }
-        return fetch(ev.request).then(
-          function (res) {
+        console.log('Network request for ', event.request.url);
+        return fetch(event.request)
+          .then(response => {
             // Check for valid response
-            if (!res || res.status !== 200 || res.type !== 'basic') {
-              return res;
+            if (!response || response.status !== 200 || response.type !== 'basic') {
+              return response;
             }
 
             // IMPORTANT: Clone the response. A response is a stream 
             // and its body can only be consumed once.
             // We need one for the browser and one for the cache.
-            var responseToCache = res.clone();
+            var responseToCache = response.clone();
             caches.open(CACHE_NAME)
-              .then(function (cache) {
-                cache.put(ev.request, responseToCache);
-              });
-            return res;
-          }
-        );
+              .then(cache => {
+                cache.put(event.request, responseToCache);
+              })
+              .catch(err => {
+                console.log('Error opening cache ', CACHE_NAME);
+                return;
+              })
+            return response;
+          })
+          .catch(err => {
+            console.log('Error fetching event request ', event.request);
+            return;
+          })
       })
   );
   console.log("Service worker finished fetch");
