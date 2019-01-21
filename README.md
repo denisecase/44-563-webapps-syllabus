@@ -22,6 +22,7 @@
 * [Tables Generator (HTML)](https://www.tablesgenerator.com/html_tables)
 * [Google Analytics](https://analytics.google.com/analytics/web/)
 * [Bootstrap CDN](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
+* [W3C Markup Validation Service](https://validator.w3.org/)
 
 ## Getting Started
 
