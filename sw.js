@@ -36,44 +36,17 @@ self.addEventListener('beforeinstallprompt', event => {
 });
 
 self.addEventListener('fetch', event => {
+  // ref https://jakearchibald.com/2014/offline-cookbook/#on-network-response
   console.log("Service worker got a fetch request");
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Cache hit - return response
-        if (response) {
-          console.log('Found ', event.request.url, ' in cache');
-          return response;
-        }
-        console.log('Network request for ', event.request.url);
-        return fetch(event.request)
-          .then(response => {
-            // Check for valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-
-            // IMPORTANT: Clone the response. A response is a stream 
-            // and its body can only be consumed once.
-            // We need one for the browser and one for the cache.
-            var responseToCache = response.clone();
-            caches.open(CACHE_NAME)
-              .then(cache => {
-                cache.put(event.request, responseToCache);
-              })
-              .catch(err => {
-                console.log('Error opening cache ', CACHE_NAME);
-                return;
-              })
-            return response;
-          })
-          .catch(err => {
-            console.log('Error fetching event request ', event.request);
-            return;
-          })
-      })
-  );
+  event.respondWith(async function() {
+    const cache = await caches.open(CACHE_NAME);
+    const cachedResponse = await cache.match(event.request);
+    if (cachedResponse) return cachedResponse;
+    const networkResponse = await fetch(event.request);
+    event.waitUntil(
+      cache.put(event.request, networkResponse.clone())
+    );
+    return networkResponse;
+  }());
   console.log("Service worker finished fetch");
 });
-
-
