@@ -45,7 +45,6 @@
     }
   </script>
 
-
 </head>
 
 <body>
@@ -72,15 +71,15 @@
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="count" disabled>0</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="reset">&olarr;</button>
+          <input name='keyword' class="form-control input-sm" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success " type="submit" id="count">0</button>
+          <button class="btn btn-outline-success " type="submit" id="reset">&olarr;</button>
         </form>
       </div>
     </nav>
   </header>
 
-  <main class="container  ">
+  <main class="container context">
 
     <div class="main-heading d-flex flex-wrap ">
       <img src="images/northwestlogo.jpg " alt="Northwest Logo " class="img-thumbnail ">
@@ -657,19 +656,20 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script defer src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
     integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
     crossorigin="anonymous"></script>
-  <script defer src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
 
-  <script defer src="vendor/mark.min.js"></script>
-  <script defer src="scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"
+    integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
