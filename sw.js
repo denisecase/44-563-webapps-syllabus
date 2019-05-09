@@ -38,15 +38,23 @@ self.addEventListener('beforeinstallprompt', event => {
 self.addEventListener('fetch', event => {
   // ref https://jakearchibald.com/2014/offline-cookbook/#on-network-response
   console.log("Service worker got a fetch request");
-  event.respondWith(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.match(event.request).then((response) => {
-        return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
-          return response;
-        });
-      });
-    })
-  );
+  event.respondWith(fromCache(event.request));
+  event.waitUntil(update(event.request));
   console.log("Service worker finished fetch");
 });
+
+function fromCache(request) {
+  return caches.open(CACHE_NAME).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      return matching || Promise.reject('no-match');
+    });
+  });
+}
+
+function update(request) {
+  return caches.open(CACHE_NAME).then(function (cache) {
+    return fetch(request).then(function (response) {
+      return cache.put(request, response);
+    });
+  });
+}
