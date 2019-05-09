@@ -3,7 +3,14 @@ console.log("Service worker starting");
 const CACHE_NAME = '44-563-v1';
 const CACHE_CONTAINING_ERROR_MESSAGES = 'error-cache'
 const urlsToCache = [
-  '/',
+  '/images/N60-2Stack-Full.jpg',
+  '/images/northwestlogo.jpg',
+  '/images/icons/android/android-launchericon-144-144.png',
+  '/images/icons/android/android-launchericon-192-192.png',
+  '/images/icons/android/android-launchericon-48-48.png',
+  '/images/icons/android/android-launchericon-512-512.png',
+  '/images/icons/android/android-launchericon-72-72.png',
+  '/images/icons/android/android-launchericon-96-96.png',
   '/styles/case-syllabus.css',
   '/scripts/main.js'
 ];
