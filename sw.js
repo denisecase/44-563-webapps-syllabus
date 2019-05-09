@@ -1,7 +1,8 @@
 console.log("Service worker starting");
 
-var CACHE_NAME = '44-563-v1';
-var urlsToCache = [
+const CACHE_NAME = '44-563-v1';
+const CACHE_CONTAINING_ERROR_MESSAGES = 'error-cache'
+const urlsToCache = [
   '/',
   '/styles/case-syllabus.css',
   '/scripts/main.js'
@@ -36,10 +37,35 @@ self.addEventListener('beforeinstallprompt', event => {
 });
 
 self.addEventListener('fetch', event => {
-  // ref https://jakearchibald.com/2014/offline-cookbook/#on-network-response
   console.log("Service worker got a fetch request");
-  event.respondWith(fromCache(event.request));
-  event.waitUntil(update(event.request));
+  event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
+         if (response) { 
+          console.log("Service worker got a valid response from the cache");
+          return response; 
+        }
+        else {
+          console.log("Service worker fetching updated content from the web");
+          return fetch(event.request)  
+            .then(function (res) {
+              console.log("Service worker saving response and returning fetched data")
+              return caches.open(CACHE_NAME)
+                .then(function (cache) {
+                  cache.put(event.request.url, res.clone());  
+                  return res;
+                })
+            })
+            .catch(function (err) {      
+              console.log("Service worker fetch unsuccessful - replying with error page or message")
+              return caches.open(CACHE_CONTAINING_ERROR_MESSAGES)
+                .then(function (cache) {
+                  return cache.match('Error - not available');
+                });
+            });
+        }
+      })
+  );
   console.log("Service worker finished fetch");
 });
 
