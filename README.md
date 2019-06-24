@@ -17,6 +17,7 @@
 
 * [Git](https://git-scm.com/download/win) version control system
 * [TortoiseGit](https://tortoisegit.org/) - integrates with Windows File Explorer
+* [Firefox](https://www.mozilla.org/en-US/firefox/) web browser or
 * [Chrome](https://www.google.com/chrome/) web browser
 * [Visual Studio Code](https://code.visualstudio.com/) - editor
 * [Tables Generator (HTML)](https://www.tablesgenerator.com/html_tables)

@@ -1,4 +1,4 @@
-# [MIT License](https://opensource.org/licenses/MIT)
+# [License](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2018-2019 Denise Case, Northwest Missouri State University
 
