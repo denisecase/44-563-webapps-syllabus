@@ -22,8 +22,9 @@
 * [Visual Studio Code](https://code.visualstudio.com/) - editor
 * [Tables Generator (HTML)](https://www.tablesgenerator.com/html_tables)
 * [Google Analytics](https://analytics.google.com/analytics/web/)
-* [Bootstrap CDN](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 * [W3C Markup Validation Service](https://validator.w3.org/)
+* [W3C Css Validation Service](https://jigsaw.w3.org/css-validator/validator)
+* [PurifyCSS](https://purifycss.online/)
 
 ## Getting Started
 

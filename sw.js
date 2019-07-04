@@ -1,22 +1,39 @@
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
+
 console.log("Service worker starting");
 
-const CACHE = '44-563-v1';
+
+
+//const CACHE = '44-563-v1';
 const CACHE_CONTAINING_ERROR_MESSAGES = '44-563-error-cache'
+
+workbox.core.setCacheNameDetails({
+  prefix: '44-563',
+  suffix: 'v1',
+  precache: 'webapps-precache',
+  runtime: 'webapps-runtime'
+});
+
 const urlsToCache = [
   '/images/N60-2Stack-Full.jpg',
   '/images/northwestlogo.jpg',
-  '/images/icons/android/android-launchericon-144-144.png',
-  '/images/icons/android/android-launchericon-192-192.png',
-  '/images/icons/android/android-launchericon-48-48.png',
-  '/images/icons/android/android-launchericon-512-512.png',
-  '/images/icons/android/android-launchericon-72-72.png',
-  '/images/icons/android/android-launchericon-96-96.png',
+  '/images/AppImages/android/android-launchericon-48-48.png',
+  '/images/AppImages/android/android-launchericon-72-72.png',
+  '/images/AppImages/android/android-launchericon-96-96.png',
+  '/images/AppImages/android/android-launchericon-144-144.png',
+  '/images/AppImages/android/android-launchericon-192-192.png',
+  '/images/AppImages/android/android-launchericon-512-512.png',
+  '/images/AppImages/chrome/chrome-extensionmanagementpage-48-48.png',
+  '/images/AppImages/chrome/chrome-favicon-16-16.png',
+  '/images/AppImages/chrome/chrome-installprocess-128-128.png',
   '/styles/case-syllabus.css',
   '/scripts/main.js'
 ];
 
 self.addEventListener('install', event => {
   console.log("Service worker install starting");
+  const CACHE = workbox.core.cacheNames.precache;
+
   // Perform install steps - open cache, cache files, confirm
   event.waitUntil(
     caches.open(CACHE)
@@ -45,6 +62,7 @@ self.addEventListener('beforeinstallprompt', event => {
 
 self.addEventListener('fetch', event => {
   console.log("Service worker got a fetch request");
+  const CACHE = workbox.core.cacheNames.precache;
   event.respondWith(
     caches.match(event.request)
       .then(response => {
