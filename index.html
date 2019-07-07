@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <!-- Put GA immediately after head tag -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Put Google Analytics immediately after head tag -->
+  <!-- Global site tag (gtag.js) -->
   <script src="https://www.googletagmanager.com/gtag/js?id=UA-65828104-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,6 +17,10 @@
   <meta name="description" content="Syllabus for NWMSU 44-563 Developing Web Apps and Services Course">
   <meta name="author" content="Denise Case">
   <meta name="theme-color" content="#006747" />
+  <meta name="msapplication-navbutton-color" content="#006747" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   <link rel="icon" href="./favicon.gif">
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
@@ -35,17 +39,18 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles -->
   <link href="./styles/case-syllabus.css" rel="stylesheet">
 
   <!-- use chrome://inspect/#service-workers to inspect -->
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').then(registration => {
-        console.log('Service worker registration successful with scope: ', registration.scope);
-      }, err => {
-        console.log('Service worker registration failed: ', err);
-      });
+        console.log(`Service worker registration successful with scope: ${registration.scope}`);
+      },
+        err => {
+          console.log('Service worker registration failed: ', err);
+        });
     }
   </script>
 
@@ -666,7 +671,8 @@
 
   <!-- https://www.jsdelivr.com/package/npm/mark.js -->
 
-  <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"
+    integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
   <!-- Custom scripts -->
 
