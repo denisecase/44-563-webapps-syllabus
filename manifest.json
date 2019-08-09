@@ -1,7 +1,7 @@
 {
   "name": "NW 44-563 Syllabus",
   "short_name": "NW 44-563",
-  "start_url": "./index.html?utm_source=a2hs",
+  "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
