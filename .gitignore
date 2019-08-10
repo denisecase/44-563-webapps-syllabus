@@ -5,6 +5,7 @@
 # Development Files (e.g., formatting and linting)
 
 node_modules
+test_results
 
 # Visual Studio code files
 

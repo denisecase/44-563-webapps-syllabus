@@ -1,5 +1,12 @@
 # [44-563 Developing Web Apps and Services Syllabus](https://profcase.github.io/44-563-webapps-syllabus)
 
+[![Lighthouse score: 92/100](https://lighthouse-badge.appspot.com/?score=92&category=Performance)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Accessibility)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 93/100](https://lighthouse-badge.appspot.com/?score=93&compact&category=Best%20Practices)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 13/13](https://lighthouse-badge.appspot.com/?score=100&compact&category=Progressive%20Web%20App)](https://github.com/ebidel/lighthouse-badge)
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 - Denise Case

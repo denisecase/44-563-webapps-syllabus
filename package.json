@@ -25,6 +25,7 @@
     "lint-fix": "eslint --fix ."
   },
   "author": "Denise Case",
+  "license": "MIT",
   "homepage": "https://www.nwmissouri.edu/csis/directory/case.htm",
   "repository": {
     "type": "git",
