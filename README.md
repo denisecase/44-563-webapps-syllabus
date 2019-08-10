@@ -8,6 +8,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a4e281ec5fd4ebcaccb3b8b2c3fc66d)](https://www.codacy.com/app/profcase/44-563-webapps-syllabus?utm_source=github.com&utm_medium=referral&utm_content=profcase/44-563-webapps-syllabus&utm_campaign=Badge_Grade)
 
 - Denise Case
 - Assistant Professor
