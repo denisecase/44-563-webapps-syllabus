@@ -1,0 +1,19 @@
+.state-icon {
+  margin-left: -5px;
+  margin-right: 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.list-group-item-primary {
+  color: rgb(255, 255, 255);
+  background-color: #006747 !important;
+}
+
+.list-group-item-primary > a {
+  color: rgb(255, 255, 255);
+  background-color: #006747 !important;
+  text-decoration: underline;
+}
