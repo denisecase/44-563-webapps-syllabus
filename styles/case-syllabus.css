@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-display: fallback;
-  src:  url('https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/font/roboto/Roboto-Regular.woff2') 
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/font/roboto/Roboto-Regular.woff2");
 }
 
 @font-face {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-display: fallback;
-  src:  url('https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/font/roboto/Roboto-Light.woff2') 
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/font/roboto/Roboto-Light.woff2");
 }
 
 a {
@@ -79,11 +79,11 @@ code {
 .tg .tg-5mgg {
   font-weight: bold;
   background-color: #c0c0c0;
-  vertical-align: top
+  vertical-align: top;
 }
 
 .tg .tg-yw4l {
-  vertical-align: top
+  vertical-align: top;
 }
 
 mark {

@@ -1,1 +1,21 @@
+# list folders and files that should NOT be committed to the repo
+
 *.pdf
+
+# Development Files (e.g., formatting and linting)
+
+node_modules
+
+# Visual Studio code files
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Mac Files
+
+.DS_Store
+
+

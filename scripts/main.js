@@ -1,12 +1,13 @@
-$(function () {
-
-  const btnClear = $("#reset")
-  const btnCount = $("#count")
+$(function() {
+  const btnClear = $("#reset");
+  const btnCount = $("#count");
+  const inputElement = $("#keyword");
 
   btnClear.on("click", () => {
-    inputElement.val("").focus()
-    found.unmark()
-  })
+    inputElement.val("").focus();
+    // eslint-disable-next-line no-undef
+    found.unmark();
+  });
 
   const mark = () => {
     const searchVal = $("input[name='keyword']").val();
@@ -16,14 +17,14 @@ $(function () {
       done: () => {
         $(".context").mark(searchVal, {
           separateWordSearch: true,
-          done: count => { btnCount.html(count.toString()) }
-        })
+          done: count => {
+            btnCount.html(count.toString());
+          }
+        });
       }
-    })
-  }
+    });
+  };
 
-  // on getting any input in the keyword element, call mark
-  $("input[name='keyword']").on("input", mark)
-
-})
-
+  // on getting input in the keyword element, call mark
+  $("input[name='keyword']").on("input", mark);
+});
