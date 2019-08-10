@@ -2,14 +2,16 @@
 /**
  *  @fileOverview Provides an asynchronous service worker to manage application behavior. 
  * 
- * Service workers are capable of intercepting and adjusting all requests before they are sent and after they return.
+ * Service workers are capable of intercepting and adjusting all requests 
+ * before they are sent and after they return.
  * 
- * Services workers can manage caching files to improve performance, provide offline app experiences, 
- * enable 'home page' installation on devices, and provide push notifications to your users.
+ * Services workers can manage caching files to improve performance, 
+ * provide offline app experiences, enable 'home page' installation on devices, 
+ * and provide push notifications to your users.
  * 
- * - Service worker will download (upon page access, every 24 hours)
- * - Will install (if new) and yield the install event
- * - Yields activate event after pages load and old service worker is no longer used
+ * An updated Service worker will download (upon first page access, or every 24 hours).
+ * If new, it will yield the install event.
+ * It will yield the activate event after pages load and old service worker is no longer used.
  *  
  * Use Chrome Dev Tools / Application to clear storage.
  * 
@@ -20,7 +22,7 @@
  * 
  * JSDoc comments are written in Markdown.
  * 
- *  @author       Denise Case
+ * @author       Denise Case
  * 
  * @requires     EXTERNAL:@link{https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js}
  */
