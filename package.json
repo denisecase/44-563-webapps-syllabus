@@ -39,5 +39,6 @@
     "Prettier",
     "web",
     "app"
-  ]
+  ],
+  "dependencies": {}
 }
