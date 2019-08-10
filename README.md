@@ -25,6 +25,8 @@
 * [PurifyCSS](https://purifycss.online/)
 * [Icons8](https://icons8.com)
 * [Google Workbox](https://developers.google.com/web/tools/workbox/)
+* [JsDoc Cheatsheet](https://devhints.io/jsdoc)
+* [Test JavaScript Regular Expressions](https://regexr.com/)
 
 ## Getting Started
 
@@ -33,4 +35,4 @@
 * From Windows File Explorer, open index.html in Chrome to view.
 * Using Visual Studio Code, open the folder to edit.
 * Open GitHub repository, under Settings / GitHub Pages, set Source to master branch and click Save.
-* Go to your Google Analytics dashboard. Add a new property for your GitHub Page, generate your tracking id, and replace the analytics code with yours.  
+* Go to your Google Analytics dashboard. Add a new property for your GitHub Page, generate your tracking id, and replace the analytics code in index.html with yours.  

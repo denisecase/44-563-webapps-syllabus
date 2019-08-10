@@ -25,6 +25,5 @@ $(function () {
   // on getting any input in the keyword element, call mark
   $("input[name='keyword']").on("input", mark)
 
-
 })
 

@@ -103,3 +103,7 @@ mark {
   flex-basis: 100%;
   flex: 1;
 }
+
+input {
+  margin-right: 2em;
+}

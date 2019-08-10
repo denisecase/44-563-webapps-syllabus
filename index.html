@@ -13,8 +13,8 @@
   </script>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <meta name="description" content="Syllabus for NWMSU 44-563 Developing Web Apps and Services Course">
   <meta name="author" content="Denise Case">
@@ -23,10 +23,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <link rel="icon" href="./favicon.gif">
+  <link rel="icon" href="./favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="canonical" href="https://profcase.github.io/44-563-webapps-syllabus/" />
   <link rel="manifest" href="./manifest.json">
 
   <title>44-563 Web Apps</title>
@@ -49,7 +50,10 @@
   <!-- Custom styles -->
   <link href="./styles/case-syllabus.css" rel="stylesheet">
 
-  <!-- use chrome://inspect/#service-workers to inspect -->
+  <!-- Service worker -->
+  <!-- If the browser (navigator) enables service workers, then after loading, register -->
+  <!-- Use chrome://inspect/#service-workers to inspect -->
+
   <script>
 
     if ('serviceWorker' in navigator) {
@@ -62,11 +66,12 @@
           });
       });
     }
-    
+
   </script>
 
-  <!-- Use rel="noopener" to prevent the linked page from being able to access window.opener property - 
-    ensures the new page will run in a separate proces-->
+  <!-- Security Note -->
+  <!-- When adding links, use rel="noopener" to prevent linked page from being able to access window.opener property. -->
+  <!-- This ensures the new page will run in a separate process. -->
 
 </head>
 
@@ -122,36 +127,46 @@
 
   </header>
 
-  <!-- add 'context' class for area subject to search marking -->
+  <!-- Main area: Add 'context' class for area subject to search marking -->
+  <!-- mt-5 is a Material Design Bootstrap class - it means 'margin top level 5 (the biggest)' -->
+
   <main class="context mt-5">
 
     <!-- Main grid container-->
     <div class="container">
 
+      <!-- A centered container for the icon and title -->
+
       <div class="d-flex flex-wrap flex-center">
         <img src="images/northwestlogo.jpg " alt="Northwest Logo " class="img-thumbnail mt-5">
         <h1 class="mt-5 ">44-563 Course Syllabus</h1>
       </div>
+
       <br>
       <br>
 
       <h2>Course Title</h2>
+
       44-563 Developing Web Apps and Services
 
       <h2>Course Credit</h2>
+
       3 hours
 
       <h2>Placement in Curriculum</h2>
+
       This course is typically offered in the later years of an undergraduate degree and early, often first
       semester, in a graduate program.
 
       <h2>Prerequisites</h2>
+
       Undergraduate prerequisites: CSIS 44241 and CSIS 44460, each with a grade of C or better. Graduate
       prerequisite: CSIS 44542 with a grade of B or better, or concurrent enrollment in CSIS 44542, or consent
       of instructor.
       (F,S)
 
       <h2>Course Professors</h2>
+
       <div class="professor-container">
         <div class="professor-row">
 
@@ -184,10 +199,12 @@
       </div>
 
       <h2>Course Description </h2>
+
       Technologies and protocols supporting web applications and web services. Students gain experience in
       client-side and server-side programming.
 
       <h2>Course Rationale</h2>
+
       This course involves an overview of Internet communications and developing applications for the World Wide
       Web. The course covers web application design, development, and scripting through hands-on, creative
       implementation exercises using modern tools and techniques for building professional, dynamic, interactive web
@@ -273,7 +290,7 @@
         </tr>
       </table>
 
-      In addition, after Module 1, students will be able to:
+      <p>In addition, after Module 1, students will be able to:</p>
 
       <ol>
         <li>Set up a computer for web development. </li>
@@ -362,7 +379,8 @@
 
       <h3>Required</h3>
 
-      <p>Students must have access to the following at every course meeting:</p>
+      <p> Students must have access to the following at every course meeting:</p>
+
       <ul class="text-left checklist">
         <li><label><input type="checkbox"><span>
               A <span class="highlight ">bound notebook with pencil/pen</span> for taking notes and submitting written
@@ -378,16 +396,14 @@
             </span></label></li>
         <li><label><input type="checkbox"><span>
               Free
-              <a rel="noopener" target="_blank" href="https://tortoisegit.org/">TortoiseGit</a> for integrating Git
-              with
-              Windows File Explorer
+              <a rel="noopener" target="_blank" href="https://tortoisegit.org/">TortoiseGit</a>
+              for integrating Git with Windows File Explorer
             </span></label></li>
         <li><label><input type="checkbox"><span>
               Free
               <a rel="noopener" target="_blank"
                 href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a>
-              for creating
-              SSH public/private key pairs
+              for creating SSH public/private key pairs
             </span></label></li>
         <li><label><input type="checkbox"><span>
               Free
@@ -436,7 +452,9 @@
       </ul>
 
       <h2>Course Outline</h2>
-      The course is divided into seven content modules.
+
+      <p>The course is divided into seven content modules.</p>
+
       <table class="tg">
         <tr>
           <th class="tg-5mgg">Module</th>
@@ -447,7 +465,7 @@
         <tr>
           <td class="tg-s268">1</td>
           <td class="tg-s268">1-3</td>
-          <td class="tg-s268">Intro, environment, Markdown, Git, publishing</td>
+          <td class="tg-s268">Course intro, environment, Markdown, Git, publishing</td>
           <td class="tg-0lax"></td>
         </tr>
         <tr>
@@ -485,39 +503,45 @@
         <tr>
           <td class="tg-s268">7</td>
           <td class="tg-s268">14-17</td>
-          <td class="tg-s268">Projects, Thanksgiving Break, Final Exam</td>
+          <td class="tg-s268">Projects, Thanksgiving break, Final, reflections</td>
           <td class="tg-0lax"></td>
         </tr>
       </table>
 
       <h3>Schedule Subject to Change</h3>
-      The schedule is subject to change with instructor notification and students will be responsible for
-      abiding by
-      these changes.
+
+      The schedule is subject to change with instructor notification and students
+      will be responsible for abiding by these changes.
 
       <h3>Schedule Links</h3>
+
       <ul class="text-left">
         <li>
-          <a rel="noopener" href="https://www.nwmissouri.edu/academics/calendar.htm">Academic Calendar</a>
+          <a target="_blank" rel="noopener" href="https://www.nwmissouri.edu/academics/calendar.htm">Academic
+            Calendar</a>
         </li>
         <li>
-          <a rel="noopener" href="https://www.nwmissouri.edu/registrar/finals.htm">Final Exams Schedule</a>
+          <a target="_blank" rel="noopener" href="https://www.nwmissouri.edu/registrar/finals.htm">Final Exams
+            Schedule</a>
         </li>
         <li>
-          <a rel="noopener" href="http://calendar.nwmissouri.edu/">University Events</a>
+          <a target="_blank" rel="noopener" href="http://calendar.nwmissouri.edu/">University Events</a>
         </li>
       </ul>
 
       <h2>Instructional Methods and Techniques </h2>
-      Instructional methods include lectures, class discussions, individual work, small group work, learner
-      presentations, discussions, guest speakers, and collaborative development.
+
+      Instructional methods include lectures, class discussions, individual work,
+      small group work, learner presentations, discussions, guest speakers, and collaborative development.
 
       <h2> Grading and Evaluation</h2>
-      <p>Graded contributions</p>
+
+      <p> Graded contributions</p>
+
       <table class="tg">
         <tr>
-          <th class="tg-5mgg">Assessments</th>
-          <th class="tg-5mgg">Approximate percentage</th>
+          <th class="tg-5mgg">Category</th>
+          <th class="tg-5mgg">Contribution</th>
         </tr>
         <tr>
           <td class="tg-yw4l">Engagement</td>
@@ -549,7 +573,8 @@
         </tr>
       </table>
 
-      <p>Grading scale</p>
+      <p> Grading scale</p>
+
       <table class="tg ">
         <tr>
           <th class="tg-5mgg ">Credit</th>
@@ -584,13 +609,13 @@
       <!-- Standard  -->
 
       <h2>Expectations</h2>
+
       This course includes the development of unique, creative applications. Students should expect to spend at
-      least
-      2-3
-      hours on out-of-class work for every one hour of instruction.
+      least 2-3 hours on out-of-class work for every one hour of instruction.
 
       <h2> Email Requirements </h2>
-      Professional email practices are required.
+
+      <p>Professional email practices are required.</p>
       <ol>
         <li class="highlight ">Email must include course number and section (e.g.,
           <strong>44-563-01</strong>) in the subject line. </li>
@@ -600,54 +625,48 @@
       </ol>
 
       <h2>Course Conduct Guidelines </h2>
+
       <ol>
         <li>Students will behave in a professional manner in all course interactions.</li>
         <li>Devices including cell phones, ear phones, gadgets, and other items should be silent and put away
-          during
-          class.</li>
+          during class.</li>
         <li>Unauthorized use of devices during class may result in reduction in scores.</li>
         <li>Be ready to work when the class is scheduled to begin.</li>
         <li>Be polite and respectful to others in the class. Do not interrupt someone during a class discussion,
-          and
-          respect others' opinions/comments as you expect them to respect yours.</li>
+          and respect others' opinions/comments as you expect them to respect yours.</li>
       </ol>
 
       <h2> Citation Requirements</h2>
+
       <ol>
         <li class="highlight ">
           <strong>Cite ALL Sources</strong>. You must provide proper citation for any content including text,
-          images,
-          videos, and code
-          <strong>that you did not personally develop</strong>. </li>
+          images, videos, and code <strong>that you did not personally develop</strong>. </li>
         <li>Do not copy and paste content for any submissions. </li>
         <li>Failing to acknowledge assistance including internet photos, clipart, slide content, course files,
-          shared
-          solutions, etc. can be expected to result in a 0 on the assignment, a one-half letter grade reduction,
-          a 0
-          in
-          the course,
-          and/or a failing the course with an academic integrity violation. </li>
+          shared solutions, etc. can be expected to result in a 0 on the assignment, a one-half letter grade reduction,
+          a 0 in the course, and/or a failing the course with an academic integrity violation. </li>
       </ol>
 
       <h2>Late Work Policy </h2>
-      <p>
-        Graded activities are expected to be completed by due date.
-        If you must miss class or a due date, contact the instructor in advance or as early as possible.
-        Due dates get you ready for coming material. Keeping up is critical.
-      </p>
-      <p>
-        On rare occassions, special challenges or obligations may make it difficult to submit on time.
-        You typically have a one-week grace period where the work may still be submitted and graded.
-        Late penalties will be desribed in the rubric.
-        No late submissions will be accepted for the final submission.
-      </p>
+
+      Graded activities are expected to be completed by due date.
+      If you must miss class or a due date, contact the instructor in advance or as early as possible.
+      Due dates get you ready for coming material. Keeping up is critical.
+
+      On rare occassions, special challenges or obligations may make it difficult to submit on time.
+      You typically have a one-week grace period where the work may still be submitted and graded.
+      Late penalties will be desribed in the rubric.
+      No late submissions will be accepted for the final submission.
 
       <h2>Submissions</h2>
+
       All submissions must be your own, creative, unique work.
       You may be asked to explain your work during class,
       in discussions, or in a recorded submission.
 
       <h2>Grading</h2>
+
       Grades will generally be posted within 2-7 days of the due date.
       If you wish to petition for additional points, please wait 24 hours.
       Petitions must be emailed, and must include the specific changes you are requesting,
@@ -656,6 +675,7 @@
       after seven days, grades are considered final.
 
       <h2>Save Your Content</h2>
+
       The course site will not be available after the end of the semester.
       Save the syllabus and any materials you wish to access after the course,
       you may need to submit this to a potential employer or another university in the future.
@@ -664,153 +684,141 @@
       <!-- Standard University -->
 
       <h2> Grade of Incomplete (I)</h2>
-      Following Northwest Missouri State University policy, incomplete grades may only be given in extreme
-      circumstances,
-      such as illness, death in a student 's immediate family, or similar circumstances beyond a student's
-      control,
-      and
+
+      Following Northwest Missouri State University policy,
+      incomplete grades may only be given in extreme circumstances,
+      such as illness, death in a student's immediate family,
+      or similar circumstances beyond a student's control, and
       the student was unable to complete a significant portion of the course work.
 
       <h2>Attendance </h2>
-      Students are expected to attend all classes as specified in the course syllabi for each course. This
-      course
-      has
-      many in-class activities, most of which have points and may not be announced in advance. Students arriving
-      late
-      or
-      missing activities due to unexcused absences may not be able to make up certain types of work and may earn
-      zero
-      points for the
-      activity. Notify your instructor when unable to attend class. Please refer to the university policy on
-      attendance
-      at
-      <a rel="noopener" target="_blank"
-        href="https://www.nwmissouri.edu/policies/academics/Attendance.pdf">https://www.nwmissouri.edu/policies/academics/Attendance.pdf</a>
+
+      Students are expected to attend all classes as specified in the course syllabi for each course.
+      This course has many in-class activities,
+      most of which have points and may not be announced in advance.
+      Students arriving late or missing activities due to unexcused absences may not be able to
+      make up certain types of work and may earn zero points for the activity.
+      Notify your instructor when unable to attend class.
+      Please refer to the university policy on attendance at
+      <a rel="noopener" target="_blank" href="https://www.nwmissouri.edu/policies/academics/Attendance.pdf">
+        https://www.nwmissouri.edu/policies/academics/Attendance.pdf</a>.
 
       <h2>Excused Absences </h2>
-      Excused absences include attendance at a university sponsored event (documented with an excuse signed by
-      the
-      university sponsor prior to the event) or by circumstances considered extenuating by the course
-      instructor. A
-      student may make up class work without penalty for excused absences.
+
+      Excused absences include attendance at a university sponsored event
+      (documented with an excuse signed by the university sponsor prior to the event)
+      or by circumstances considered extenuating by the course instructor.
+      A student may make up class work without penalty for excused absences.
 
       <h2>Final Exams</h2>
-      If an emergency occurs that prevents the administration of a course scheduled final examination, the final
-      course
-      grades will be calculated based on the work in the course completed to that point in time and the faculty
-      member’s
-      considered judgment. Final exams will not be rescheduled, and a grade of “I” will not be given as a result
-      of
-      an
-      institutional cancellation of a final examination.
+
+      If an emergency occurs that prevents the administration of a course scheduled final examination,
+      the final course grades will be calculated based on the work in the course completed to that
+      point in time and the faculty member's considered judgment.
+      Final exams will not be rescheduled,
+      and a grade of “I” will not be given as a result of an institutional cancellation of a final examination.
 
       <h2>Administrative Drop </h2>
-      An instructor may request the Office of the Registrar delete a student from a course roster if the student
-      has
-      not
-      met the prerequisite for the course as stated in the catalog, or as a result of non-attendance in the
-      course.
+
+      An instructor may request the Office of the Registrar delete a student from a course roster
+      if the student has not met the prerequisite for the course as stated in the catalog,
+      or as a result of non-attendance in the course.
 
       <h2>Course Access</h2>
+
       Course content is provided via Canvas and Northwest Online. Access to Northwest Online is at
       <a rel="noopener" href="https://nwmissouri.instructure.com/">https://nwmissouri.instructure.com/</a>.
 
       <h2>University Communications </h2>
-      Students are expected to use their Northwest student email account for any electronic correspondence
-      within
-      the
-      university. Students are also strongly advised to check their email and CatPAWS accounts on a regular
-      basis.
+
+      Students are expected to use their Northwest student email account
+      for any electronic correspondence within the university.
+      Students are also strongly advised to check their email and CatPAWS accounts on a regular basis.
 
       <h2>Academic Integrity Policy</h2>
-      The students, faculty, and staff at Northwest endeavor to sustain an environment that values honesty in
-      academic
-      work, that acknowledges the authorized aid provided by and intellectual contributions of others, and that
-      enables
-      equitable student evaluation. Please refer to Northwest Missouri State University’s Academic Integrity
-      Policy
-      at
+
+      The students, faculty, and staff at Northwest endeavor to sustain an environment
+      that values honesty in academic work,
+      that acknowledges the authorized aid provided by and intellectual contributions of others,
+      and that enables equitable student evaluation.
+      Please refer to Northwest Missouri State University’s Academic Integrity Policy at
       <a rel="noopener" target="_blank"
         href="http://www.nwmissouri.edu/policies/academics/Academic-Integrity.pdf">http://www.nwmissouri.edu/policies/academics/Academic-Integrity.pdf</a>.
-      In addition, students are expected to understand and abide by the Computer Science and Information Systems
-      Academic
-      Integrity Policy at
+      In addition, students are expected to understand and abide by the
+      Computer Science and Information Systems Academic Integrity Policy at
       <a rel="noopener" target="_blank"
         href="http://www.nwmissouri.edu/csis/pdf/AcademicIntegrityCSI.doc">http://www.nwmissouri.edu/csis/pdf/AcademicIntegrityCSI.doc</a>.
-      This document explains types of behavior considered to constitute academic dishonesty. You are responsible
-      for
-      reading this document and abiding by the guidelines described therein.
+      This document explains types of behavior considered to constitute academic dishonesty.
+      You are responsible for reading this document and abiding by the guidelines described therein.
 
       <h2>Special Accommodations Policy </h2>
-      Northwest Missouri State University complies with Section 504 of the Rehabilitation Act of 1973 and the
-      Americans
-      with Disabilities Act of 1990 [ADA] and the ADA Amendments Act of 2008 [ADAAA]. If a student has a
-      disability
-      that
-      qualifies under the ADA/ADAAA and requires accommodations, they should contact the Office for Equity and
-      Accessibility for information on appropriate policies and procedures at
+
+      Northwest Missouri State University complies with Section 504 of the Rehabilitation Act of 1973
+      and the Americans with Disabilities Act of 1990 [ADA] and the ADA Amendments Act of 2008 [ADAAA].
+      If a student has a disability that qualifies under the ADA/ADAAA and requires accommodations, they
+      should contact the Office for Equity and Accessibility
+      for information on appropriate policies and procedures at
       <a rel="noopener" href="tel:+16605621639">660.562.1639</a>, or
       <a rel="noopener" target="_top" href="mailto:pjp@nwmissouri.edu?Subject=Accomodations">pjp@nwmissouri.edu</a>
-      /
+      or
       <a rel="noopener" target="_top" href="mailto:ADA@nwmissouri.edu?Subject=Accomodations">ADA@nwmissouri.edu</a>.
-      For
-      the university
-      policy on disability accommodation refer to
+      For the university policy on disability accommodation refer to
       <a rel="noopener" target="_blank"
         href="http://www.nwmissouri.edu/policies/student/Disability-Accommodation.pdf">http://www.nwmissouri.edu/policies/student/Disability-Accommodation.pdf</a>.
 
       <h2>Non-Discrimination and Anti-Harrassment Policy </h2>
-      Northwest Missouri State University is committed to maintaining an environment for all faculty, staff,
-      students,
-      and third parties that is free of illegal discrimination and harassment. Please refer to the
-      Non-Discrimination
-      and
-      Anti-Harassment Policy at
+
+      Northwest Missouri State University is committed to maintaining an environment for all faculty,
+      staff, students, and third parties that is free of illegal discrimination and harassment.
+      Please refer to the Non-Discrimination and Anti-Harassment Policy at
       <a rel="noopener" target="_blank"
         href="http://www.nwmissouri.edu/diversity/titlevi.htm">http://www.nwmissouri.edu/diversity/titlevi.htm</a>.
 
       <h2> Family Educational Rights and Privacy Act (FERPA) </h2>
+
       Family Educational Rights and Privacy Act of 1974, as amended (commonly known as the Buckley Amendment),
-      is a
-      federal law which provides that colleges and universities will maintain the confidentiality of student
-      education
-      records. Please refer to the Family Educational Rights and Privacy Act (FERPA) Policy at
+      is a federal law which provides that colleges and universities will maintain the confidentiality
+      of student education records.
+      Please refer to the Family Educational Rights and Privacy Act (FERPA) Policy at
       <a rel="noopener" target="_blank"
-        href="http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf">http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf</a>
+        href="http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf">http://www.nwmissouri.edu/policies/academics/Family-Educational-Rights-and-Privacy-Act.pdf</a>.
 
       <h2>Course Evaluation</h2>
+
       At the end of this course, you will be encouraged to complete a course evaluation.
 
       <h2> Syllabus Subject to Change</h2>
-      The syllabus is subject to change with instructor notification and students will be responsible for
-      abiding by
-      these changes.
-      <br>
-      <br>
 
+      The syllabus is subject to change with instructor notification and students will be responsible for
+      abiding by these changes.
+
+      <br>
+      <br>
 
     </div> <!-- end container -->
 
   </main>
 
-  <!-- sticky footer with padding on y-axis (top and bottom) -->
+  <!-- Sticky footer with padding (py level 3) on y-axis (top and bottom) -->
 
   <footer class="footer bg-light py-3 text-center ">
 
-    <a rel="noopener" href="https://www.linkedin.com/in/denisecase/">Denise Case </a>
+    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/denisecase/">Denise Case </a>
     &nbsp; &#9670; &nbsp;
 
-    <a rel="noopener" href="https://profcase.github.io/44-563-webapps-syllabus" target="_blank">Site</a>
+    <a target="_blank" rel="noopener" href="https://profcase.github.io/44-563-webapps-syllabus">Site</a>
     &nbsp; &#9670; &nbsp;
 
-    <a rel="noopener" href="https://github.com/profcase/44-563-webapps-syllabus" target="_blank">Source</a>
+    <a target="_blank" rel="noopener" href="https://github.com/profcase/44-563-webapps-syllabus">Source</a>
 
   </footer>
 
   <!-- SCRIPTS -->
 
-  <!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
-  <!-- Add defer for improved performance -->
+  <!-- Placed at the end so the page loads faster -->
+  <!-- Add the 'defer' attribute for improved performance (script will be read after HTML finishes loading) -->
+
+  <!-- Copy in content from https://mdbootstrap.com/md-bootstrap-cdn/ -->
 
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -824,14 +832,14 @@
   <script defer type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
 
-  <!-- https://www.jsdelivr.com/package/npm/mark.js -->
+  <!-- Copy in content from https://www.jsdelivr.com/package/npm/mark.js -->
 
-  <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"
+  <script defer src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"
     integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
-  <!-- Custom scripts -->
+  <!-- Include custom scripts -->
 
-  <script src="./scripts/main.js"></script>
+  <script defer src="./scripts/main.js"></script>
 
 </body>
 
