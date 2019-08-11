@@ -10,6 +10,12 @@
   src: url('https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/font/roboto/Roboto-Light.woff2');
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  font-display: fallback;
+  src: url('https://use.fontawesome.com/releases/v5.8.2/webfonts/fa-regular-400.woff2');
+}
+
 a {
   color: #006747;
 }
