@@ -133,7 +133,14 @@ if (workbox) {
   self.addEventListener('install', event => {
     event.waitUntil(
       caches.open(`${appName}-static`).then(cache => {
-        return cache.addAll(['.', 'index.html', 'styles/case-syllabus.css'])
+        return cache.addAll([
+          '.',
+          'index.html',
+          'styles/case-syllabus.css',
+          'styles/active-checks.css',
+          'scripts/main.js',
+          'scripts/active-checks.js'
+        ])
       })
     )
   })
