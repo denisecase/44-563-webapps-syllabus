@@ -106,16 +106,19 @@
               updateViaCache: 'none'
             })
             .then(
-              registration => {
-                console.log(
-                  `Service worker registered with scope: ${registration.scope}`
-                )
-              },
-              err => {
-                console.log('Service worker registration failed: ', err)
-              }
+              caches.keys().then(cacheNames => {
+                cacheNames.forEach(cacheName => { caches.delete(cacheName) })
+              }))
+          registration => {
+            console.log(
+              `Service worker registered with scope: ${registration.scope}`
             )
-        })
+          },
+            err => {
+              console.log('Service worker registration failed: ', err)
+            }
+            )
+      })
       }
     </script>
 
