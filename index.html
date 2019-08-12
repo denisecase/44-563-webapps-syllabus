@@ -101,24 +101,18 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker
-            .register('./service-worker.js', {
-              updateViaCache: 'none'
-            })
-            .then(
-              caches.keys().then(cacheNames => {
-                cacheNames.forEach(cacheName => { caches.delete(cacheName) })
-              }))
-          registration => {
-            console.log(
-              `Service worker registered with scope: ${registration.scope}`
-            )
-          },
-            err => {
-              console.log('Service worker registration failed: ', err)
+          // temporarily get all registrations & unregister them
+          navigator.serviceWorker.getRegistrations().then(registrations => {
+            for (let registration of registrations) {
+              registration.unregister()
             }
-            )
-      })
+          })
+          caches.keys().then(cacheNames => {
+            cacheNames.forEach(cacheName => {
+              caches.delete(cacheName)
+            })
+          })
+        })
       }
     </script>
 
