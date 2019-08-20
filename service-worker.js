@@ -32,7 +32,7 @@ importScripts(
 )
 
 if (workbox) {
-  console.log('Service worker Workbox loaded', workbox.routing)
+  console.log(`Service worker Workbox loaded: ${workbox.routing}`)
 
   const appName = '44-563-webapps-syllabus'
   const appVersion = 'v1'
@@ -70,6 +70,10 @@ if (workbox) {
     new workbox.strategies.StaleWhileRevalidate()
   )
 
+  console.log(
+    `Workbox registered fonts ${reCdnFont} with Stale While Revalidate strategy`
+  )
+
   // use stale cached cdn style files while downloading new
   // set the max age of the cached files and the max number of entries it can hold
 
@@ -90,6 +94,10 @@ if (workbox) {
     })
   )
 
+  console.log(
+    `Workbox registered styles ${reCdnStyles} with Stale While Revalidate strategy`
+  )
+
   // Use stale local static files (js/css) while downloading new
 
   workbox.routing.registerRoute(
@@ -104,6 +112,10 @@ if (workbox) {
         })
       ]
     })
+  )
+
+  console.log(
+    `Workbox registered static assets ${reStatic} with Stale While Revalidate strategy`
   )
 
   // Fetch images, try local cache first
@@ -121,6 +133,9 @@ if (workbox) {
       ]
     })
   )
+  console.log(
+    `Workbox registered static images ${reImages} with Cache First strategy`
+  )
 
   // Define a common handler if any of the fetching methods fail
 
@@ -136,28 +151,42 @@ if (workbox) {
 
   self.addEventListener('install', event => {
     event.waitUntil(
-      caches.open(`${appName}-static`).then(cache => {
-        return cache.addAll([
-          '.',
-          'index.html',
-          'styles/case-syllabus.css',
-          'styles/active-checks.css',
-          'scripts/main.js',
-          'scripts/register-sw.js',
-          'scripts/active-checks.js'
-        ])
-      })
+      caches
+        .open(`${appName}-static`)
+        .then(cache => {
+          console.log(`Workbox got content from cache ${appName}-static `)
+          return cache.addAll([
+            '.',
+            'index.html',
+            'styles/case-syllabus.css',
+            'styles/active-checks.css',
+            'scripts/main.js',
+            'scripts/register-sw.js',
+            'scripts/active-checks.js'
+          ])
+        })
+        .catch(error => {
+          console.error(`Error in install event: ${error} `)
+        })
     )
   })
 
   self.addEventListener('fetch', event => {
     event.respondWith(
-      caches.match(event.request).then(response => {
-        if (response) {
-          return response
-        }
-        return fetch(event.request)
-      })
+      caches
+        .match(event.request)
+        .then(response => {
+          if (response) {
+            console.log(`Workbox got fetch response ${response} `)
+            return response
+          }
+          return fetch(event.request)
+        })
+        .catch(error => {
+          console.error(`Error on fetch: ${error} `)
+        })
     )
   })
+} else {
+  console.log(`Error: Workbox didn't load 😬`)
 }
