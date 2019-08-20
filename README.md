@@ -31,7 +31,8 @@
 - [TortoiseGit](https://tortoisegit.org/) - integrates with Windows File Explorer
 - [Firefox](https://www.mozilla.org/en-US/firefox/) web browser or
 - [Chrome](https://www.google.com/chrome/) web browser
-- [Visual Studio Code](https://code.visualstudio.com/) - editor
+- [Visual Studio Code (VS Code)](https://code.visualstudio.com/) - editor
+- [VS Code Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Tables Generator (HTML)](https://www.tablesgenerator.com/html_tables)
 - [Google Analytics](https://analytics.google.com/analytics/web/)
 - [Google Workbox](https://developers.google.com/web/tools/workbox/)
@@ -41,6 +42,8 @@
 - [ESLint](https://eslint.org/)
 - [Favicon.io](https://favicon.io)
 - [PWA Builder App Image Generator](https://www.pwabuilder.com/imageGenerator)
+- [The Service Worker Lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
+- [Service Worker API (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 
 ## Getting Started
 
