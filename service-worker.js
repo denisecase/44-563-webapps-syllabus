@@ -188,5 +188,5 @@ if (workbox) {
     )
   })
 } else {
-  console.log(`Error: Workbox didn't load 😬`)
+  console.log(`Error: Workbox didn't load.`)
 }
