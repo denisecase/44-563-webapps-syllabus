@@ -44,7 +44,7 @@ if (workbox) {
   const httpReponseOk = 200 // good
 
   // test Regular Expressions at https://regexr.com/
-  const reStatic = /\.(?:js|css)$/
+  const reStatic = /\.(?:js|css|html)$/
   const reImages = /\.(?:png|gif|jpg|jpeg|webp|svg)$/
   const reCdnFont = /https:\/\/use\.fontawesome\.com\/.*all\.css$/
   const reCdnStyles = /https:\/\/cdnjs\.cloudflare\.com\/.*\.css$/
