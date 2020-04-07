@@ -3,7 +3,7 @@
 [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&category=Performance)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Accessibility)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best%20Practices)](https://github.com/ebidel/lighthouse-badge)
-[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=93&compact&category=SEO)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 92/13](https://lighthouse-badge.appspot.com/?score=92&compact&category=Progressive%20Web%20App)](https://github.com/ebidel/lighthouse-badge)
 
 [![Known Vulnerabilities](https://snyk.io//test/github/profcase/44-563-webapps-syllabus/badge.svg?targetFile=package.json)](https://snyk.io//test/github/profcase/44-563-webapps-syllabus?targetFile=package.json)
