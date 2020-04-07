@@ -1,10 +1,10 @@
 # [44-563 Developing Web Apps and Services Syllabus](https://profcase.github.io/44-563-webapps-syllabus)
 
-[![Lighthouse score: 92/100](https://lighthouse-badge.appspot.com/?score=92&category=Performance)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&category=Performance)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Accessibility)](https://github.com/ebidel/lighthouse-badge)
-[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=93&compact&category=Best%20Practices)](https://github.com/ebidel/lighthouse-badge)
-[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](https://github.com/ebidel/lighthouse-badge)
-[![Lighthouse score: 13/13](https://lighthouse-badge.appspot.com/?score=100&compact&category=Progressive%20Web%20App)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best%20Practices)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=93&compact&category=SEO)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 92/13](https://lighthouse-badge.appspot.com/?score=92&compact&category=Progressive%20Web%20App)](https://github.com/ebidel/lighthouse-badge)
 
 [![Known Vulnerabilities](https://snyk.io//test/github/profcase/44-563-webapps-syllabus/badge.svg?targetFile=package.json)](https://snyk.io//test/github/profcase/44-563-webapps-syllabus?targetFile=package.json)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a4e281ec5fd4ebcaccb3b8b2c3fc66d)](https://www.codacy.com/app/profcase/44-563-webapps-syllabus?utm_source=github.com&utm_medium=referral&utm_content=profcase/44-563-webapps-syllabus&utm_campaign=Badge_Grade)
