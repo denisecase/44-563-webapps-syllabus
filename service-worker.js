@@ -29,7 +29,7 @@
 
 // eslint-disable-next-line no-undef
 importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js'
+  'https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js',
 );
 
 if (workbox) {
@@ -63,12 +63,12 @@ if (workbox) {
 
   workbox.routing.registerRoute(
     reCdnFont,
-    new workbox.strategies.StaleWhileRevalidate()
+    new workbox.strategies.StaleWhileRevalidate(),
   );
 
   workbox.routing.registerRoute(
     reGoogleFont,
-    new workbox.strategies.StaleWhileRevalidate()
+    new workbox.strategies.StaleWhileRevalidate(),
   );
 
   // use stale cached cdn style files while downloading new
@@ -88,7 +88,7 @@ if (workbox) {
           statuses: [httpReponseOk],
         }),
       ],
-    })
+    }),
   );
 
   // Use stale local static files (js/css) while downloading new
@@ -104,7 +104,7 @@ if (workbox) {
           purgeOnQuotaError: true,
         }),
       ],
-    })
+    }),
   );
 
   // Fetch images, try local cache first
@@ -120,7 +120,7 @@ if (workbox) {
           purgeOnQuotaError: true,
         }),
       ],
-    })
+    }),
   );
 
   // Define a common handler if any of the fetching methods fail
@@ -154,11 +154,11 @@ if (workbox) {
             'web-components/nw-syllabus-outline.js',
             'web-components/nw-syllabus-professor.js',
             'web-components/nw-syllabus-professor-standard.js',
-          ])
+          ]),
         )
         .catch((error) => {
           console.error(`Error in install event: ${error} `);
-        })
+        }),
     );
   });
 
@@ -174,7 +174,7 @@ if (workbox) {
         })
         .catch((error) => {
           console.error(`Error on fetch: ${error} `);
-        })
+        }),
     );
   });
 } else {
