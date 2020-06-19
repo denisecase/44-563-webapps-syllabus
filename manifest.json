@@ -1,6 +1,7 @@
 {
   "name": "NW 44-563 Syllabus",
   "short_name": "NW 44-563",
+  "scope": "/",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
@@ -9,9 +10,9 @@
   "description": "Northwest Missouri State University 44-563 Syllabus.",
   "author": {
     "name": "Denise Case",
-    "website": "https://profcase.github.io",
-    "github": "https://github.com/profcase",
-    "source-repo": "https://github.com/profcase/44-563-webapps-syllabus"
+    "website": "https://denisecase.github.io",
+    "github": "https://github.com/denisecase",
+    "source-repo": "https://github.com/denisecase/44-563-webapps-syllabus"
   },
   "gcm_sender_id": "?",
   "icons": [

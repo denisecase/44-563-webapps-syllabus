@@ -1,4 +1,16 @@
 {
-  "semi": false,
-  "singleQuote": true
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": [
+        "*.html",
+        "*.js*",
+        "*.md",
+        "web-components/*.js",
+        "scripts/*.js"
+      ]
+    }
+  ]
 }
