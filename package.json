@@ -26,7 +26,7 @@
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
     "prettier": "prettier --write .",
-    "sort": "npx npx sort-package-json",
+    "sort": "npx sort-package-json",
     "test": "npx lighthouse-badges --urls https://denisecase.github.io/44-563-webapps-syllabus/ -o test_results"
   },
   "husky": {
