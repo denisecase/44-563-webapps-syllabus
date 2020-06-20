@@ -35,8 +35,51 @@
       "pre-push": "echo not running tests"
     }
   },
-  "dependencies": {
-    "sort-package-json": "latest"
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "overrides": [
+      {
+        "files": [
+          "*.html",
+          "*.js*",
+          "*.md",
+          "web-components/*.js",
+          "scripts/*.js"
+        ]
+      }
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2020": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module"
+    },
+    "extends": [
+      "airbnb-base"
+    ],
+    "rules": {
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "$": true,
+      "jQuery": true,
+      "workbox": true
+    }
   },
   "devDependencies": {
     "eslint": "7.2.0",
@@ -45,6 +88,7 @@
     "husky": "latest",
     "prettier": "latest",
     "prettier-eslint": "latest",
-    "pretty-quick": "latest"
+    "pretty-quick": "latest",
+    "sort-package-json": "latest"
   }
 }
