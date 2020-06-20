@@ -38,18 +38,7 @@
   "prettier": {
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "all",
-    "overrides": [
-      {
-        "files": [
-          "*.html",
-          "*.js*",
-          "*.md",
-          "web-components/*.js",
-          "scripts/*.js"
-        ]
-      }
-    ]
+    "trailingComma": "all"
   },
   "eslintConfig": {
     "env": {
