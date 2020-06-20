@@ -39,7 +39,7 @@
     "sort-package-json": "latest"
   },
   "devDependencies": {
-    "eslint": "latest",
+    "eslint": "7.2.0",
     "eslint-config-airbnb-base": "latest",
     "eslint-plugin-import": "latest",
     "husky": "latest",
