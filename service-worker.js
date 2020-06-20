@@ -48,6 +48,7 @@ if (workbox) {
   const reCdnFont = /https:\/\/use\.fontawesome\.com\/.*all\.css$/;
   const reGoogleFont = /https:\/\/fonts\.googleapis\.com\/*$/;
   const reCdnStyles = /https:\/\/stackpath\.bootstrapcdn\.com\/.*\.css$/;
+  const reSyllabus = /https:\/\/denisecase.github.io\/*.(?:js|css|html)$/;
 
   // set a prefix & suffix so local host caches remain unique
   workbox.core.setCacheNameDetails({
@@ -68,6 +69,11 @@ if (workbox) {
 
   workbox.routing.registerRoute(
     reGoogleFont,
+    new workbox.strategies.StaleWhileRevalidate(),
+  );
+
+  workbox.routing.registerRoute(
+    reSyllabus,
     new workbox.strategies.StaleWhileRevalidate(),
   );
 
@@ -144,16 +150,8 @@ if (workbox) {
             '.',
             'index.html',
             'styles/case-syllabus.css',
-            'styles/active-checks.css',
-            'scripts/main.js',
             'scripts/register-sw.js',
-            'scripts/active-checks.js',
-            'web-components/nw-syllabus-footer.js',
-            'web-components/nw-syllabus-header.js',
-            'web-components/nw-syllabus-nw-standard.js',
             'web-components/nw-syllabus-outline.js',
-            'web-components/nw-syllabus-professor.js',
-            'web-components/nw-syllabus-professor-standard.js',
           ]),
         )
         .catch((error) => {

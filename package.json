@@ -12,7 +12,8 @@
     "lighthouse-badges",
     "codacy-badge",
     "eslint",
-    "prettier"
+    "prettier",
+    "husky"
   ],
   "homepage": "https://www.nwmissouri.edu/csis/directory/case.htm",
   "repository": {

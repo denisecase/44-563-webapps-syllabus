@@ -73,7 +73,7 @@
     <link
       defer
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
 
     <!-- Bootstrap core CSS -->
@@ -162,79 +162,7 @@
           of B or better, or concurrent enrollment in CSIS 44542, or consent of
           instructor. (F,S)
 
-          <h2>Course Professors</h2>
-
-          <div class="professor-container">
-            <div class="professor-row">
-              <div class="professor-column">
-                <a
-                  rel="noopener"
-                  target="_blank"
-                  href="https://www.nwmissouri.edu/csis/directory/case.htm"
-                  >Dr. Denise Case</a
-                >
-                Assistant Professor
-                <br />
-                660.562.1136
-                <br />
-                <a
-                  class="tap-target-a"
-                  rel="noopener"
-                  target="_top"
-                  href="mailto:dcase@nwmissouri.edu?Subject=44-563"
-                  >dcase@nwmissouri.edu</a
-                >
-                <a
-                  class="tap-target-a"
-                  rel="noopener"
-                  target="_blank"
-                  href="https://www.nwmissouri.edu/services/facility/pdf/floorplans/Colden%20Hall%202nd%20Floor.pdf"
-                >
-                  Colden Hall 2280</a
-                >
-
-                <a
-                  class="tap-target-a"
-                  href="https://docs.google.com/spreadsheets/d/1dGFW0ybTrUKMN6U4vu8I9G9efUE1ZJz8ktDyOTJTOA0/edit?usp=sharing"
-                  >Office Hours Link</a
-                >
-                <br />
-              </div>
-
-              <div class="professor-column">
-                <a
-                  rel="noopener"
-                  target="_blank"
-                  href="https://www.nwmissouri.edu/csis/directory/eloe.htm"
-                  >Dr. Nathan Eloe</a
-                >
-                Assistant Professor
-                <br />
-                660.562.0832
-                <br />
-                <a
-                  class="tap-target-a"
-                  rel="noopener"
-                  target="_top"
-                  href="mailto:nathane@nwmissouri.edu?Subject=44-563"
-                  >nathane@nwmissouri.edu</a
-                >
-                <a
-                  class="tap-target-a"
-                  rel="noopener"
-                  target="_blank"
-                  href="https://www.nwmissouri.edu/services/facility/pdf/floorplans/Colden%20Hall%202nd%20Floor.pdf"
-                >
-                  Colden Hall 2147</a
-                >
-
-                Office Hours:
-                <br />
-                M 2-4, W 2-3, TR 1:30-3:30
-                <br />
-              </div>
-            </div>
-          </div>
+          <nw-syllabus-professor></nw-syllabus-professor>
 
           <h2>Course Description</h2>
 
@@ -743,13 +671,17 @@
 
     <!-- Include custom web components -->
 
-    <script defer src="./web-components/nw-syllabus-header.js"></script>
     <script defer src="./web-components/nw-syllabus-outline.js"></script>
 
     <!-- Include shared scripts -->
+
     <script
       defer
       src="https://denisecase.github.io/44-517-bigdata-syllabus/web-components/nw-syllabus-footer.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/web-components/nw-syllabus-header.js"
     ></script>
     <script
       defer

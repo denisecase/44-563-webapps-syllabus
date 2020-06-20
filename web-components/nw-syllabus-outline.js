@@ -17,9 +17,7 @@ class nwSyllabusOutline extends HTMLElement {
       <tr class="d-flex">
         <td class="col-2 ">1</td>
         <td class="col-2 ">1-3</td>
-        <td class="col-8 ">
-        Course intro, environment, Markdown, Git, publishing
-        </td>
+        <td class="col-8 "> Course intro, environment, Markdown, Git, publishing  </td>
       </tr>
       <tr class="d-flex">
         <td class="col-2 ">2</td>
@@ -32,8 +30,7 @@ class nwSyllabusOutline extends HTMLElement {
       <tr class="d-flex">
         <td class="col-2 ">3</td>
         <td class="col-2 ">6-7</td>
-        <td class="col-8 ">
-        Storage, testing, debugging, client-side frameworks, two-way data binding, Vue.js
+        <td class="col-8 ">Storage, testing, debugging, client-side frameworks, two-way data binding, Vue.js
         </td>
       </tr>
       <tr class="d-flex">
@@ -50,15 +47,13 @@ class nwSyllabusOutline extends HTMLElement {
       <tr class="d-flex">
         <td class="col-2">6</td>
         <td class="col-2">13-14</td>
-        <td class="col-8">
-        APIs, CRUD, controllers, views, view engines
+        <td class="col-8">  APIs, CRUD, controllers, views, view engines
         </td>
       </tr>
       <tr class="d-flex">
         <td class="col-2">7</td>
         <td class="col-2">15-17</td>
-        <td class="col-8">
-        Demonstrations and peer review, final reflection
+        <td class="col-8"> Demonstrations and peer review, final submission
         </td>
       </tr>
     </table>
