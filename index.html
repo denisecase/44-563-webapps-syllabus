@@ -540,16 +540,8 @@
             </ul>
           </div>
 
-          <nw-syllabus-outline
-            mod1="Course intro, environment, Markdown, Git, publishing"
-            mod2="HTML, concepts, CSS, responsive design, JavaScript, jQuery, DOM, AJAX, fetch, axios"
-            mod3="Storage, testing, debugging, client-side frameworks, two-way data binding, Vue.js"
-            mod4="JSON, progressive web apps (PWA), server-side, Node/Express, HTTP request/response, frameworks, patterns"
-            mod5="MVC, middleware, routing, data, models, services, sockets"
-            mod6="APIs, CRUD, controllers, views, view engines"
-            mod7="Demonstrations and peer review, final submission"
-          >
-          </nw-syllabus-outline>
+          <nw-syllabus-modules-outline> </nw-syllabus-modules-outline>
+          <nw-syllabus-schedule> </nw-syllabus-schedule>
 
           <h2>Instructional Methods and Techniques</h2>
 
@@ -678,6 +670,14 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Include data-driven components -->
+
+    <script
+      defer
+      type="module"
+      src="./web-components/nw-syllabus-outline.js"
+    ></script>
+
     <!-- Include shared scripts -->
 
     <script
@@ -703,6 +703,10 @@
     <script
       defer
       src="https://denisecase.github.io/44-517-bigdata-syllabus/web-components/nw-syllabus-professor-standard.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/web-components/nw-syllabus-schedule.js"
     ></script>
 
     <script
