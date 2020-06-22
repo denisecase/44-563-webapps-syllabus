@@ -26,6 +26,10 @@
 
 ## Recommended
 
+Host
+
+- [GitHub Pages](https://pages.github.com/) - free & easy hosting for client-side sites
+
 Basic Tools
 
 - [Git](https://git-scm.com/download/win) version control system
@@ -52,6 +56,12 @@ Code Tools
 - [Prettier](https://prettier.io/) - formats JavaScript, CSS, JSON, and more
 - [ESLint](https://eslint.org/docs/user-guide/getting-started) - linting
 - [Sort package.json](https://www.npmjs.com/package/sort-package-json) - consistant, std format
+
+Responsive Design
+
+- [Bootstrap](https://getbootstrap.com/) - responsive design
+- [Material Design for Bootstrap](https://mdbootstrap.com/) - nice looking styles, great tutorials
+- [Bootstrap 5 alpha](https://mdbootstrap.com/docs/standard/bootstrap-5/) - drops jQuery
 
 Audits
 
