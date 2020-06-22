@@ -150,8 +150,10 @@ if (workbox) {
             '.',
             'index.html',
             'scripts/register-sw.js',
-            'web-components/nw-syllabus-outline.js',
-            'init.js',
+            'custom-elements/nw-syllabus-outcomes-list.js',
+            'custom-elements/nw-syllabus-outline.js',
+            'init-outline.js',
+            'init-outcomes.js',
           ]),
         )
         .catch((error) => {

@@ -388,21 +388,21 @@
             <ul class="list-group" style="list-style-type: none;">
               <li
                 id="101"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 A <strong>bound notebook with pencil/pen</strong> for taking
                 notes and submitting written content (e.g., pop quizzes)
               </li>
               <li
                 id="102"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Their campus-assigned laptop, in working order, with all
                 required software
               </li>
               <li
                 id="103"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a rel="noopener" target="_blank" href="https://git-scm.com/"
@@ -412,7 +412,7 @@
               </li>
               <li
                 id="104"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a
@@ -425,7 +425,7 @@
               </li>
               <li
                 id="105"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a
@@ -438,7 +438,7 @@
               </li>
               <li
                 id="106"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a rel="noopener" target="_blank" href="https://bitbucket.org"
@@ -452,7 +452,7 @@
               </li>
               <li
                 id="107"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a
@@ -465,7 +465,7 @@
               </li>
               <li
                 id="108"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a rel="noopener" target="_blank" href="https://chocolatey.org/"
@@ -475,7 +475,7 @@
               </li>
               <li
                 id="109"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a
@@ -488,7 +488,7 @@
               </li>
               <li
                 id="110"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a
@@ -501,7 +501,7 @@
               </li>
               <li
                 id="111"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free
                 <a
@@ -514,7 +514,7 @@
               </li>
               <li
                 id="112"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free access to
                 <a rel="noopener" target="_blank" href="https://www.typing.com/"
@@ -523,14 +523,14 @@
               </li>
               <li
                 id="113"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Various free, open-source tools, libraries, and hosting accounts
                 as directed by instructor.
               </li>
               <li
                 id="114"
-                class="list-group-item list-group-item-action active"
+                class="requirement-li list-group-item list-group-item-action active"
               >
                 Free account at
                 <a rel="noopener" target="_blank" href="https://www.typing.com/"
@@ -670,15 +670,20 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Include data-driven components -->
+    <!-- Include custom data driven elements -->
 
     <script
       defer
       type="module"
-      src="./web-components/nw-syllabus-outline.js"
+      src="./custom-elements/nw-syllabus-outcomes-list.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./custom-elements/nw-syllabus-outline.js"
     ></script>
 
-    <!-- Include shared scripts -->
+    <!-- Include shared custom elements -->
 
     <script
       defer
@@ -708,6 +713,8 @@
       defer
       src="https://denisecase.github.io/44-517-bigdata-syllabus/web-components/nw-syllabus-schedule.js"
     ></script>
+
+    <!-- Include shared custom scripts -->
 
     <script
       defer
