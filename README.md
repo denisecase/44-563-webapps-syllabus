@@ -4,6 +4,7 @@
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/denisecase/44-563-webapps-syllabus?style=flat)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Code Style](https://badgen.net/badge/code%20style/airbnb/ff5a5f?icon=airbnb)](https://github.com/airbnb/javascript)
 
 [![Lighthouse Performance Badge](./test_results/lighthouse_performance.svg)](https://github.com/emazzotta/lighthouse-badges)
 [![Lighthouse Accessibility Badge](./test_results/lighthouse_accessibility.svg)](https://github.com/emazzotta/lighthouse-badges)
@@ -56,12 +57,15 @@ Code Tools
 - [Prettier](https://prettier.io/) - formats JavaScript, CSS, JSON, and more
 - [ESLint](https://eslint.org/docs/user-guide/getting-started) - linting
 - [Sort package.json](https://www.npmjs.com/package/sort-package-json) - consistant, std format
+- [Mark.js](https://markjs.io/) - JS keyword highlighter
 
 Responsive Design
 
 - [Bootstrap](https://getbootstrap.com/) - responsive design
 - [Material Design for Bootstrap](https://mdbootstrap.com/) - nice looking styles, great tutorials
 - [Bootstrap 5 alpha](https://mdbootstrap.com/docs/standard/bootstrap-5/) - drops jQuery
+- [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (custom properties)
+- [2020 JavaScript](https://auth0.com/blog/javascript-whats-new-es2020/) - dynamic imports, ??, and more
 
 Audits
 
@@ -82,12 +86,17 @@ Analytics
 
 - [Google Analytics](https://analytics.google.com/analytics/web/)
 
+Speech Synthesis
+
+- [Built-in Speech Synthesis](SpeechSynthesisUtterance)
+
 As Needed
 
 - [Tables Generator (HTML)](https://www.tablesgenerator.com/html_tables)
 - [PurifyCSS](https://github.com/purifycss/purifycss) - reduce size
 - [PurifyCSS](https://purifycss.online/) - online
 - [Icons8](https://icons8.com)
+- [JSDoc](https://jsdoc.app/)
 - [JsDoc Cheatsheet](https://devhints.io/jsdoc)
 - [Test JavaScript Regular Expressions](https://regexr.com/)
 - [Code styles guide](https://medium.com/@uistephen/style-guides-for-linting-ecmascript-2015-eslint-common-google-airbnb-6c25fd3dff0)
@@ -176,4 +185,4 @@ npm run lint-fix
 
 ## See also
 
-- Source: <https://github.com/denisecase/44-517-bigdata-syllabus>
+- Source: <https://github.com/denisecase/44-517-bigdata-syllabus> - uses content from here
