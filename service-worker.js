@@ -35,18 +35,14 @@ importScripts(
 if (workbox) {
   const appName = '44-563-webapps-syllabus';
   const appVersion = 'v1';
-  const maxAgeDay = 1 * 24 * 60 * 60;
-  const maxAgeWeek = maxAgeDay * 7;
-  const maxEntries = 60; // limit to 60 items
-  // eslint-disable-next-line no-unused-vars
-  const httpResponseOpaque = 0; // CORS
+  const maxAge10MinInSeconds = 10 * 60;
+  const maxAge1DayInSeconds = 1 * 24 * 60 * 60;
   const httpReponseOk = 200; // good
 
   // test Regular Expressions at https://regexr.com/
   const reStatic = /\.(?:js|css|html)$/;
   const reImages = /\.(?:png|gif|jpg|jpeg|webp|svg)$/;
   const reCdnFont = /https:\/\/use\.fontawesome\.com\/.*all\.css$/;
-  const reGoogleFont = /https:\/\/fonts\.googleapis\.com\/*$/;
   const reCdnStyles = /https:\/\/stackpath\.bootstrapcdn\.com\/.*\.css$/;
   const reSyllabus = /https:\/\/denisecase.github.io\/*.(?:js|css|html)$/;
 
@@ -60,35 +56,17 @@ if (workbox) {
 
   const precacheCacheName = workbox.core.cacheNames.precache;
 
-  // use stale cached cdn font files while downloading new
+  // CDN Fonts:
+  // use stale cached files while downloading new for next time
+  // set the max age of the cached files
 
   workbox.routing.registerRoute(
     reCdnFont,
-    new workbox.strategies.StaleWhileRevalidate(),
-  );
-
-  workbox.routing.registerRoute(
-    reGoogleFont,
-    new workbox.strategies.StaleWhileRevalidate(),
-  );
-
-  workbox.routing.registerRoute(
-    reSyllabus,
-    new workbox.strategies.StaleWhileRevalidate(),
-  );
-
-  // use stale cached cdn style files while downloading new
-  // set the max age of the cached files and the max number of entries it can hold
-
-  workbox.routing.registerRoute(
-    reCdnStyles,
     new workbox.strategies.StaleWhileRevalidate({
       cacheName: precacheCacheName,
       plugins: [
         new workbox.cacheableResponse.CacheableResponsePlugin({
-          maxAgeSeconds: maxAgeWeek,
-          maxEntries,
-          purgeOnQuotaError: true,
+          maxAgeSeconds: maxAge10MinInSeconds,
         }),
         new workbox.cacheableResponse.CacheableResponsePlugin({
           statuses: [httpReponseOk],
@@ -97,7 +75,42 @@ if (workbox) {
     }),
   );
 
-  // Use stale local static files (js/css) while downloading new
+  workbox.routing.registerRoute(
+    reSyllabus,
+    new workbox.strategies.StaleWhileRevalidate({
+      cacheName: precacheCacheName,
+      plugins: [
+        new workbox.cacheableResponse.CacheableResponsePlugin({
+          maxAgeSeconds: maxAge10MinInSeconds,
+        }),
+        new workbox.cacheableResponse.CacheableResponsePlugin({
+          statuses: [httpReponseOk],
+        }),
+      ],
+    }),
+  );
+  // CDN styles:
+  // use stale cached files while downloading new for next time
+  // set the max age of the cached files
+
+  workbox.routing.registerRoute(
+    reCdnStyles,
+    new workbox.strategies.StaleWhileRevalidate({
+      cacheName: precacheCacheName,
+      plugins: [
+        new workbox.cacheableResponse.CacheableResponsePlugin({
+          maxAgeSeconds: maxAge1DayInSeconds,
+        }),
+        new workbox.cacheableResponse.CacheableResponsePlugin({
+          statuses: [httpReponseOk],
+        }),
+      ],
+    }),
+  );
+
+  // Static assets:
+  // use stale cached files while downloading new for next time
+  // set the max age of the cached files
 
   workbox.routing.registerRoute(
     reStatic,
@@ -105,25 +118,24 @@ if (workbox) {
       cacheName: precacheCacheName,
       plugins: [
         new workbox.cacheableResponse.CacheableResponsePlugin({
-          maxAgeSeconds: maxAgeDay,
-          maxEntries,
-          purgeOnQuotaError: true,
+          maxAgeSeconds: maxAge10MinInSeconds,
         }),
       ],
     }),
   );
 
-  // Fetch images, try local cache first
+  // Images:
+  // use stale cached files while downloading new for next time
+  // set the max age of the cached files
+  // use different cache for images
 
   workbox.routing.registerRoute(
     reImages,
-    new workbox.strategies.CacheFirst({
-      cacheName: precacheCacheName,
+    new workbox.strategies.StaleWhileRevalidate({
+      cacheName: `${precacheCacheName}-images`,
       plugins: [
         new workbox.cacheableResponse.CacheableResponsePlugin({
-          maxAgeSeconds: maxAgeWeek, // keep images for a week
-          maxEntries,
-          purgeOnQuotaError: true,
+          maxAgeSeconds: maxAge10MinInSeconds,
         }),
       ],
     }),
@@ -147,13 +159,12 @@ if (workbox) {
         .open(precacheCacheName)
         .then((cache) =>
           cache.addAll([
-            '.',
             'index.html',
+            'init-outline.js',
+            'init-outcomes.js',
             'scripts/register-sw.js',
             'custom-elements/nw-syllabus-outcomes-list.js',
             'custom-elements/nw-syllabus-outline.js',
-            'init-outline.js',
-            'init-outcomes.js',
           ]),
         )
         .catch((error) => {
