@@ -63,31 +63,24 @@
       href="./images/favicon_io/favicon-16x16.png"
     />
 
-    <!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
+    <!-- https://mdbootstrap.com/docs/standard/getting-started/installation/ -->
     <!-- Material Design for Bootstrap fonts and icons -->
     <!-- Add defer for improved performance -->
-    <!-- Explicitly opt in to CORS with crossorigin = "anonymous" -->
-    <!-- https://developers.google.com/web/tools/workbox/guides/handle-third-party-requests -->
 
     <!-- Font Awesome -->
     <link
-      defer
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
-
-    <!-- Bootstrap core CSS -->
+    <!-- Google Fonts -->
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
     />
-
-    <!-- Material Design Bootstrap -->
+    <!-- MDB -->
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha3/mdb.min.css"
       rel="stylesheet"
-      href="https://denisecase.github.io/44-517-bigdata-syllabus/MDB-Free_4.19.0/css/mdb.min.part.css"
     />
 
     <!-- Custom styles -->
@@ -448,38 +441,7 @@
 
           <nw-syllabus-contributions></nw-syllabus-contributions>
 
-          <p>Grading scale</p>
-
-          <table class="tg">
-            <tr>
-              <th>Credit</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>Percent Range</td>
-              <td>Grade</td>
-            </tr>
-            <tr>
-              <td>90-100%</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>&gt;= 80% and &lt; 90%</td>
-              <td>B</td>
-            </tr>
-            <tr>
-              <td>&gt;= 70% and &lt; 80%</td>
-              <td>C</td>
-            </tr>
-            <tr>
-              <td>&gt;= 60% and &lt; 70%</td>
-              <td>D</td>
-            </tr>
-            <tr>
-              <td>below 60%</td>
-              <td>F</td>
-            </tr>
-          </table>
+          <nw-syllabus-grade-scale-standard></nw-syllabus-grade-scale-standard>
 
           <nw-syllabus-professor-standard emailSubject="44-563-02">
           </nw-syllabus-professor-standard>
@@ -548,6 +510,10 @@
     <script
       defer
       src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-footer.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-grade-scale-standard"
     ></script>
     <script
       defer

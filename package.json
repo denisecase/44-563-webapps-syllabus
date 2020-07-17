@@ -66,9 +66,8 @@
       "import/extensions": 0
     },
     "globals": {
-      "$": true,
       "found": true,
-      "jQuery": true,
+      "google": true,
       "workbox": true
     }
   },
