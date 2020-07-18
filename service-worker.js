@@ -160,9 +160,11 @@ if (workbox) {
         .then((cache) =>
           cache.addAll([
             'index.html',
+            'init-contributions.js',
             'init-outline.js',
             'init-outcomes.js',
             'scripts/register-sw.js',
+            'custom-elements/nw-syllabus-contributions.js',
             'custom-elements/nw-syllabus-outcomes-list.js',
             'custom-elements/nw-syllabus-outline.js',
           ]),
