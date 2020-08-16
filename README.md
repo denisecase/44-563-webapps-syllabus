@@ -22,9 +22,9 @@
 - Site: <https://denisecase.github.io/44-563-webapps-syllabus>
 - Source: <https://github.com/denisecase/44-563-webapps-syllabus>
 
-## Prerequistes
+## Prerequisites
 
-- [Follow these guides for Windows users](https://denisecase.github.io/windows-dev-list/) to get set up for development.
+- [Follow this guide for Windows users](https://github.com/denisecase/windows-setup/blob/master/README.md/) to get set up for development.
 
 ## Recommended
 
